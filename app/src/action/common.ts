@@ -706,6 +706,26 @@ export function changeOverlays(status:number[]): actionTypes.ChangeOverlaysActio
   }
 }
 
+/**
+ * Change Overlay Transparency
+ */
+export function changeOverlayTransparency(transparency:number): actionTypes.ChangeOverlayTransparencyAction {
+  return {
+    ...makeBaseAction(actionConsts.CHANGE_OVERLAY_TRANSPARENCY),
+    newOverlayTransparency: transparency
+  }
+} 
+
+/**
+ * Change Radar Status
+ */
+export function changeRadarStatus(status:number[]): actionTypes.ChangeRadarStatusAction {
+  return {
+    ...makeBaseAction(actionConsts.CHANGE_RADAR_STATUS),
+    newRadarStatus: status
+  }
+}
+
 
 /**
  * Change session mode
